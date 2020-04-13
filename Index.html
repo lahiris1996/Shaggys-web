@@ -1,0 +1,198 @@
+
+  <!DOCTYPE html>
+  <html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Implement Sticky Header and Footer with CSS</title>
+<style>
+    /* Add some padding on document's body to prevent the content
+    to go underneath the header and footer */
+    body{        
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .fixed-header, .fixed-footer{
+        width: 100%;
+        height:4%;
+        position: fixed;        
+        background: rgb(25, 100, 105);
+        padding: 10px 0;
+        color: rgb(0, 0, 0);
+    }
+    .fixed-header{
+        top: 0;
+    }
+    .fixed-footer{
+        bottom: 0;
+    }
+    .container{
+        width: 50%;
+        margin: 0 auto; /* Center the DIV horizontally */
+        
+    }
+    nav a{
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        padding: 7px 25px;
+        display: inline-block;
+    }
+</style>
+</head>
+<body>
+    <div class="fixed-header">
+        <div class="container">
+            <nav>
+                <a href="#">Anthropology</a>
+                <a href="#">Drawing </a>
+                <a href="#">Passion Projects</a>
+                <a href="#">Contact Me</a>
+            
+            </nav>
+        </div>
+    </div>
+    <div class="container">
+    </div>    
+    <div class="fixed-footer">
+        <div class="container">Copyright &copy; 2016 Your Company</div>        
+    </div>
+</body>
+</html>
+  <html lang="en">
+  <head>
+  <title>Page Title</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  /* Style the body */
+  body. {
+    font-family: 'Lucida Sans';
+    margin: 0;
+    color: silver;
+  }
+  
+  /* Header/Logo Title */
+  .header {
+    padding: 70px;
+    text-align: center;
+    background: no-repeat url("https://www.goodfreephotos.com/albums/united-states/idaho/other-idaho/panoramic-of-the-forest-in-caribou-targhee-national-forest.jpg");
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: darken;
+    color: rgb(231, 217, 212);
+    font-size: 30px;
+  }
+  
+  /* Page Content */
+  
+  .content {padding:115px;}
+  </style>
+  </head>
+  <body>
+ 
+
+    <div class="header">
+        <h1>Welcome to Shagnik's website
+        </h1>
+
+    <div class="content"> 
+         <h5>The website hosted by me, Shagnik, using my name, Shagnik, which I otherwise never use</h5>
+<!-- Tab links -->
+
+<!--tab design -->
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial bold;}
+/* Style the tab */
+.tab {  
+  overflow: hidden;
+  border: 10px solid black;
+  background: no-repeat url("https://koerberremarks13.files.wordpress.com/2012/11/beach-sand-first-view.jpg");
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background: no-repeat url("https://koerberremarks13.files.wordpress.com/2012/11/beach-sand-first-view.jpg");
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 18.3199px;
+  transition: 0.3s;
+  font-size: 16px;
+  font-weight:bolder ;
+  color: rgb(0, 0, 0);
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background: no-repeat url("http://4.bp.blogspot.com/-tUCq-lyactw/TscJD2ZPkZI/AAAAAAAAAt0/J8ex2qE1iNY/s1600/ocean-1-731730.jpg");
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background: no-repeat url("http://4.bp.blogspot.com/-tUCq-lyactw/TscJD2ZPkZI/AAAAAAAAAt0/J8ex2qE1iNY/s1600/ocean-1-731730.jpg")
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 2px;
+  border: 1px solid black;
+  border-top: none; 
+  background: no-repeat url("http://lh6.ggpht.com/_jFM-Fd8NDFE/THQQn2fK12I/AAAAAAAAJCo/wT970ma-xS0/s1600/Coffee%20Paper4.jpg");
+  color:rgb(238, 238, 238);
+  font:Arial;
+  font-size:15px
+}
+
+}
+</style>
+</head>
+<body>
+
+<div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'Me')">Me- Just the Surface</button>
+    <button class="tablinks" onclick="openCity(event, 'Me- The Extended Cut')">Me- The Extended Cut</button>
+    <button class="tablinks" onclick="openCity(event, 'Me- A Theoretical and Critical Analysis')">Me- A Theoretical and Critical Analysis </button>
+    <button class="tablinks" onclick="openCity(event, 'Work for Me')">Work for Me </button>
+  </div>
+  
+  <!-- Tab content -->
+  <div id="Me" class="tabcontent">
+    <h3>ME</h3>
+    <p>A very surface level analysis of Me.</p>
+  </div>
+  
+  <div id="Me- The Extended Cut" class="tabcontent">
+    <h3>ME- The Extended Cut 
+    </h3>
+    <p>starting to get a little more intimate .</p> 
+  </div>
+  
+  <div id="Me- A Theoretical and Critical Analysis" class="tabcontent">
+    <h3>ME- A Theoretical and Critical Analysis </h3>
+    <p>Only open this tab is you're prepared to be scarred.</p>
+  </div>
+
+  <div id="Work for Me" class="tabcontent">
+      <h3>Careers</h3>
+      <p>Wanna job? well why don't you work for me? and why don't you work for free?</p>
+      </div>
+
+  <script>
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    </script>
